@@ -6,7 +6,6 @@ from sklearn.naive_bayes import MultinomialNB
 import streamlit as st
 
 st.title('Spam message dectection')
-message = []
 message = st.text_input('Enter your message here')
 # importing dataset from github
 df = pd.read_table('https://raw.githubusercontent.com/diazonic/Machine-Learning-using-sklearn/master/Datasets/spam.tsv')
