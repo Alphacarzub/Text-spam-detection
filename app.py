@@ -14,7 +14,7 @@ df = pd.read_table('https://raw.githubusercontent.com/diazonic/Machine-Learning-
 x = df['message'].values
 y = df['label'].values
 
-# Splitting the dataset in ratio  of 75:25
+# Splitting the dataset in ratio of 75:25
 x_train,x_test,y_train,y_test = train_test_split(x,y,random_state=0)
 
 #performing normalization
