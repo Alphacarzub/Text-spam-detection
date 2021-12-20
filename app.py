@@ -26,6 +26,6 @@ x_test_vect = vect.transform(x_test)
 #Using naive bayes algo 
 model = MultinomialNB()
 model.fit(x_train_vect,y_train)
-y_pred = model.predict([message])
+y_pred = model.predict(message)
 if st.button('PREDICT'):
     st.title(y_pred[0]) 
